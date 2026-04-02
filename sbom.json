@@ -1,0 +1,74 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-04-02T00:00:00Z",
+    "tools": [
+      {
+        "vendor": "manual",
+        "name": "sbom-generator",
+        "version": "1.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "name": "vulnerable-python-app",
+      "version": "1.0.0"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "Flask",
+      "version": "0.12",
+      "purl": "pkg:pypi/flask@0.12"
+    },
+    {
+      "type": "library",
+      "name": "requests",
+      "version": "2.19.1",
+      "purl": "pkg:pypi/requests@2.19.1"
+    },
+    {
+      "type": "library",
+      "name": "PyYAML",
+      "version": "5.3",
+      "purl": "pkg:pypi/pyyaml@5.3"
+    },
+    {
+      "type": "library",
+      "name": "PyJWT",
+      "version": "1.5.0",
+      "purl": "pkg:pypi/pyjwt@1.5.0"
+    },
+    {
+      "type": "library",
+      "name": "Django",
+      "version": "2.0.0",
+      "purl": "pkg:pypi/django@2.0.0"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:pypi/flask@0.12",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/requests@2.19.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pyyaml@5.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pyjwt@1.5.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/django@2.0.0",
+      "dependsOn": []
+    }
+  ]
+}
