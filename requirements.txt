@@ -1,0 +1,5 @@
+Flask==0.12          # vulnérabilités HIGH
+requests==2.19.1     # vulnérabilités HIGH
+PyYAML==5.3          # vulnérabilité CRITICAL (RCE via load)
+PyJWT==1.5.0         # vulnérabilité HIGH (signature bypass)
+Django==2.0.0        # vulnérabilités MEDIUM/HIGH
